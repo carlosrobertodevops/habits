@@ -13,10 +13,13 @@
 - Vite
 - Prisma
 - fastify
-- tailwindcss
+- [tailwindcss](https://tailwindcss.com/)
+- [PhosphorIcons](https://phosphoricons.com/)
 - cors
-- expo
+- [expo](https://expo.dev/)
 - React Native + jsx + css + flexbox
+- [Radix UI](https://www.radix-ui.com/)
+- [MUI](https://mui.com/)
 
 ## 1.2 Projeto
 
