@@ -19,8 +19,13 @@ export function NewHabitForm() {
       <label htmlFor="" className="font-semibold leading-tight mt-4">
         Qual a recorrência?
       </label>
+
       <div className="">
-        <Checkbox.Root className='flex items-center gap-3 group'>
+
+        {/** chrckbox dos hábitos */}
+        <Checkbox.Root
+          className='flex items-center gap-3 group'
+         >
           <div className='w-8 h-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500'>
             <Checkbox.Indicator>
               <Check size={23} className="text-white" />
@@ -28,7 +33,7 @@ export function NewHabitForm() {
           </div>
 
           <span className='text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc-400'>
-            Beber 2L de água
+            Segunda-feira
           </span>
         </Checkbox.Root>
       </div>
