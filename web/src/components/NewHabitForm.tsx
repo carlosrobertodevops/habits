@@ -6,7 +6,7 @@ import { Alert } from "@mui/material";
 // import { Alert } from "@mui/material";
 
 
-const availableWeekDays = [
+const availablehabitsWeeksDays = [
   'Domingo',
   'Segunda-feira',
   'Terça-feira',
@@ -19,35 +19,35 @@ const availableWeekDays = [
 export function NewHabitForm() {
 
   const [ title, setTitle ] = useState('');
-  const [ weekDays, setWeekDays ] = useState<number[]>([]);
+  const [ habitsWeeksDays, setHabitsWeeksDays ] = useState<number[]>([]);
 
   async function createNewHabit(event: FormEvent) {
     event.preventDefault();
-    console.log(title, weekDays)
+    console.log(title, habitsWeeksDays)
 
-    if (!title || weekDays.length === 0) {
+    if (!title || habitsWeeksDays.length === 0) {
       return
     }
 
     /** acessando à api do backend */
     api.post('/habits', {
       title,
-      weekDays,
+      habitsWeeksDays,
     })
 
     setTitle('')
-    setWeekDays([])
-    alert('Hábito criado com suceso !!')
+    setHabitsWeeksDays([])
+    alert('Hábito criado com sucesso !!')
   }
 
   function handleToggleWeekDay(weekDay: number) {
-    if (weekDays.includes(weekDay)) {
-      const weekDaysWithRemovedOne = weekDays.filter(day => day !== weekDay)
-      setWeekDays(weekDaysWithRemovedOne)
+    if (habitsWeeksDays.includes(weekDay)) {
+      const habitsWeeksDaysWithRemovedOne = habitsWeeksDays.filter(day => day !== weekDay)
+      setHabitsWeeksDays(habitsWeeksDaysWithRemovedOne)
 
     } else {
-      const weekDaysWithAddedOne = [...weekDays, weekDay]
-      setWeekDays(weekDaysWithAddedOne)
+      const habitsWeeksDaysWithAddedOne = [...habitsWeeksDays, weekDay]
+      setHabitsWeeksDays(habitsWeeksDaysWithAddedOne)
     }
   }
 
@@ -73,12 +73,12 @@ export function NewHabitForm() {
 
       <div className="flex flex-col gap-2 mt-3">
 
-        {availableWeekDays.map((weekDay, index) =>{
+        {availableHabitsWeeksDays.map((weekDay, index) =>{
           return (
             <Checkbox.Root
               key={weekDay}
               className="flex items-center gap-3 group"
-              checked={weekDays.includes(index)}
+              checked={habitsWeeksDays.includes(index)}
               onCheckedChange={() => {handleToggleWeekDay(index)}}
             >
               <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500">
