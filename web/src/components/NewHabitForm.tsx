@@ -6,7 +6,7 @@ import { Alert } from "@mui/material";
 // import { Alert } from "@mui/material";
 
 
-const availablehabitsWeeksDays = [
+const availableHabitsWeeksDays = [
   'Domingo',
   'Segunda-feira',
   'Terça-feira',
