@@ -1,10 +1,13 @@
 import { Plus, X } from "phosphor-react"
+import * as Dialog from '@radix-ui/react-dialog';
+
 import logoImage from '../assets/logo.svg'
+import { NewHabitForm } from "./NewHabitForm";
+
 import * as React from 'react';
 import Snackbar, { SnackbarOrigin } from '@mui/material/Snackbar';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
-import * as Dialog from '@radix-ui/react-dialog';
-import { NewHabitForm } from "./NewHabitForm";
+
 
 
 
