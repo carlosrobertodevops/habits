@@ -2,8 +2,6 @@ import { Check, Stack } from "phosphor-react";
 import * as Checkbox from '@radix-ui/react-checkbox'
 import { FormEvent, useState } from "react";
 import { api } from "../lib/axios";
-import { Alert } from "@mui/material";
-// import { Alert } from "@mui/material";
 
 
 const availableHabitsWeeksDays = [

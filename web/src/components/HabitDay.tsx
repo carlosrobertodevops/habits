@@ -5,22 +5,25 @@ import { ProgressBar } from './ProgressBar'
 import { clsx } from 'clsx'
 import dayjs from 'dayjs'
 import { HabitsList } from './HabitsList'
+import { useState } from 'react'
 
 
 interface HabitDayProps {
   date: Date
-  completed?: number
+  defaultCompleted?: number
   amount?: number
 }
 
-export function HabitDay({ completed = 0, amount = 0, date }: HabitDayProps) {
+export function HabitDay({ defaultCompleted = 0, amount = 0, date }: HabitDayProps) {
+
+  const [completed, setCompleted]= useState(defaultCompleted)
 
   const completedPercent = amount > 0 ? Math.round((completed / amount) * 100) : 0
   const dayAndMonth = dayjs(date).format('DD/MM')
   const dayOfWeek = dayjs(date).format('dddd')
 
   function handleCompletedChanged(completed: number) {
-    console.log(completed)
+    setCompleted(completed)
   }
 
   return (

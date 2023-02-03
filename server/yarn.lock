@@ -355,6 +355,8 @@
   "version" "1.0.0"
 
 "chalk@^1.0.0", "chalk@^1.1.1":
+  "integrity" "sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A=="
+  "resolved" "https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz"
   "version" "1.1.3"
   dependencies:
     "ansi-styles" "^2.2.1"
@@ -404,8 +406,6 @@
   "version" "1.0.0"
 
 "cliui@^3.2.0":
-  "integrity" "sha512-0yayqDxWQbqk3ojkYqUKqaAQ6AfNKeKWRNA8kR0WXzAsdHpP4BIaOmMAG87JGuO6qcobyW4GjxHd9PmhEd+T9w=="
-  "resolved" "https://registry.npmjs.org/cliui/-/cliui-3.2.0.tgz"
   "version" "3.2.0"
   dependencies:
     "string-width" "^1.0.1"
@@ -1186,11 +1186,6 @@
   dependencies:
     "is-arrayish" "^0.2.1"
 
-"esbuild-linux-64@0.15.18":
-  "integrity" "sha512-hNSeP97IviD7oxLKFuii5sDPJ+QHeiFTFLoLm7NZQligur8poNOWGIgpQ7Qf8Balb69hptMZzyOBIPtY09GZYw=="
-  "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.18.tgz"
-  "version" "0.15.18"
-
 "esbuild@~0.15.10":
   "integrity" "sha512-x/R72SmW3sSFRm5zrrIjAhCeQSAWoni3CmHEqfQrZIQTM3lVCdehdwuIqaOtfC2slvpdlLa62GYoN8SxT23m6Q=="
   "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.15.18.tgz"
@@ -1368,8 +1363,6 @@
     "safe-regex2" "^2.0.0"
 
 "find-up@^2.0.0":
-  "integrity" "sha512-NWzkk0jSJtTt08+FBFMvXoeZnOJD+jTtsRmBYbAIzJdX6l7dLgR7CTubCM5/eDdPUBvLCeVasP1brfVR/9/EZQ=="
-  "resolved" "https://registry.npmjs.org/find-up/-/find-up-2.1.0.tgz"
   "version" "2.1.0"
   dependencies:
     "locate-path" "^2.0.0"
@@ -1407,8 +1400,6 @@
     "pinkie-promise" "^2.0.0"
 
 "get-stream@^3.0.0":
-  "integrity" "sha512-GlhdIUuVakc8SJ6kK0zAFbiGzRFzNnY4jUuEbV9UROo4Y+0Ny4fjvcZFVTeDA4odpFyOQzaw6hXukJSq/f28sQ=="
-  "resolved" "https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz"
   "version" "3.0.0"
 
 "get-stream@^5.1.0":
@@ -1542,8 +1533,6 @@
   "version" "2.0.3"
 
 "invert-kv@^1.0.0":
-  "integrity" "sha512-xgs2NH9AE66ucSq4cNG1nhSFghr5l6tdL15Pk+jl46bmmBapgoaY/AacXyaDznAqmGL99TiLSQgO/XazFSKYeQ=="
-  "resolved" "https://registry.npmjs.org/invert-kv/-/invert-kv-1.0.0.tgz"
   "version" "1.0.0"
 
 "ipaddr.js@1.9.1":
@@ -1569,8 +1558,6 @@
     "number-is-nan" "^1.0.0"
 
 "is-fullwidth-code-point@^2.0.0":
-  "integrity" "sha512-VHskAKYM8RfSFXwee5t5cbN5PZeq1Wrh6qd5bkyiXIf6UQcN6w/A0eXM9r6t8d+GYOh+o6ZhiEnb88LN/Y8m2w=="
-  "resolved" "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz"
   "version" "2.0.0"
 
 "is-npm@^1.0.0":
@@ -1639,8 +1626,6 @@
   "version" "2.0.0"
 
 "lcid@^1.0.0":
-  "integrity" "sha512-YiGkH6EnGrDGqLMITnGjXtGmNtjoXw9SVUzcaos8RBi7Ps0VBylkq+vOcY9QE5poLasPCR849ucFUkl0UzUyOw=="
-  "resolved" "https://registry.npmjs.org/lcid/-/lcid-1.0.0.tgz"
   "version" "1.0.0"
   dependencies:
     "invert-kv" "^1.0.0"
@@ -1660,8 +1645,6 @@
   "version" "1.2.4"
 
 "load-json-file@^2.0.0":
-  "integrity" "sha512-3p6ZOGNbiX4CdvEd1VcE6yi78UrGNpjHO33noGwHCnT/o2fyllJDepsm8+mFFv/DvtwFHht5HIHSyOy5a+ChVQ=="
-  "resolved" "https://registry.npmjs.org/load-json-file/-/load-json-file-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "graceful-fs" "^4.1.2"
@@ -1711,8 +1694,6 @@
     "pify" "^2.3.0"
 
 "mem@^1.1.0":
-  "integrity" "sha512-nOBDrc/wgpkd3X/JOhMqYR+/eLqlfLP4oQfoBA6QExIxEl+GU01oyEkwWyueyO8110pUKijtiHGhEmYoOn88oQ=="
-  "resolved" "https://registry.npmjs.org/mem/-/mem-1.1.0.tgz"
   "version" "1.1.0"
   dependencies:
     "mimic-fn" "^1.0.0"
@@ -1914,8 +1895,6 @@
     "callsites" "^3.0.0"
 
 "parse-json@^2.2.0":
-  "integrity" "sha512-QR/GGaKCkhwk1ePQNYDRKYZ3mwU9ypsKhB0XyFnLQdomyEqk3e8wpW3V5Jp88zbxK4n5ST1nqo+g9juTpownhQ=="
-  "resolved" "https://registry.npmjs.org/parse-json/-/parse-json-2.2.0.tgz"
   "version" "2.2.0"
   dependencies:
     "error-ex" "^1.2.0"
@@ -1959,8 +1938,6 @@
   "version" "3.1.1"
 
 "path-type@^2.0.0":
-  "integrity" "sha512-dUnb5dXUf+kzhC/W/F4e5/SkluXIFf5VUHolW1Eg1irn1hGWjPGdsRcvYJ1nD6lhk8Ir7VM0bHJKsYTx8Jx9OQ=="
-  "resolved" "https://registry.npmjs.org/path-type/-/path-type-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "pify" "^2.0.0"
@@ -1976,8 +1953,6 @@
   "version" "1.2.0"
 
 "pify@^2.0.0", "pify@^2.3.0":
-  "integrity" "sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog=="
-  "resolved" "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz"
   "version" "2.3.0"
 
 "pinkie-promise@^2.0.0":
@@ -2150,16 +2125,12 @@
     "strip-json-comments" "~2.0.1"
 
 "read-pkg-up@^2.0.0":
-  "integrity" "sha512-1orxQfbWGUiTn9XsPlChs6rLie/AV9jwZTGmu2NZw/CUDJQchXJFYE0Fq5j7+n558T1JhDWLdhyd1Zj+wLY//w=="
-  "resolved" "https://registry.npmjs.org/read-pkg-up/-/read-pkg-up-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "find-up" "^2.0.0"
     "read-pkg" "^2.0.0"
 
 "read-pkg@^2.0.0":
-  "integrity" "sha512-eFIBOPW7FGjzBuk3hdXEuNSiTZS/xEMlH49HxMyzb0hyPfu4EhVjT2DH32K1hSSmVq4sebAWnZuuY5auISUTGA=="
-  "resolved" "https://registry.npmjs.org/read-pkg/-/read-pkg-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "load-json-file" "^2.0.0"
@@ -2337,6 +2308,8 @@
   "version" "3.0.2"
 
 "slide@^1.1.5":
+  "integrity" "sha512-NwrtjCg+lZoqhFU8fOwl4ay2ei8PaqCBOUV3/ektPY9trO1yQ1oXEfmHAhKArUVUr/hOHvy5f6AdP17dCM0zMw=="
+  "resolved" "https://registry.npmjs.org/slide/-/slide-1.1.6.tgz"
   "version" "1.1.6"
 
 "sonic-boom@^3.1.0":
@@ -2383,8 +2356,6 @@
     "safe-buffer" "~5.2.0"
 
 "string-width@^1.0.1":
-  "integrity" "sha512-0XsVpQLnVCXHJfyEs8tC0zpTVIr5PKKsQtkT29IwupnPTjtPmQ3xT/4yCREF9hYkV/3M3kzcUTSAZT6a6h81tw=="
-  "resolved" "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz"
   "version" "1.0.2"
   dependencies:
     "code-point-at" "^1.0.0"
@@ -2412,8 +2383,6 @@
     "ansi-regex" "^5.0.1"
 
 "strip-bom@^3.0.0":
-  "integrity" "sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA=="
-  "resolved" "https://registry.npmjs.org/strip-bom/-/strip-bom-3.0.0.tgz"
   "version" "3.0.0"
 
 "strip-eof@^1.0.0":
@@ -2665,8 +2634,6 @@
   "version" "4.0.0"
 
 "yargs-parser@^7.0.0":
-  "integrity" "sha512-WhzC+xgstid9MbVUktco/bf+KJG+Uu6vMX0LN1sLJvwmbCQVxb4D8LzogobonKycNasCZLdOzTAk1SK7+K7swg=="
-  "resolved" "https://registry.npmjs.org/yargs-parser/-/yargs-parser-7.0.0.tgz"
   "version" "7.0.0"
   dependencies:
     "camelcase" "^4.1.0"
