@@ -27,7 +27,7 @@
   "private": true,
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "vite --cors --force",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "type": "module",

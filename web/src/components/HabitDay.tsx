@@ -14,10 +14,14 @@ interface HabitDayProps {
 }
 
 export function HabitDay({ completed = 0, amount = 0, date }: HabitDayProps) {
-  const completedPercent = amount > 0 ? Math.round((completed / amount) * 100) : 0
 
+  const completedPercent = amount > 0 ? Math.round((completed / amount) * 100) : 0
   const dayAndMonth = dayjs(date).format('DD/MM')
-  const dayOfWeek= dayjs(date).format('dddd')
+  const dayOfWeek = dayjs(date).format('dddd')
+
+  function handleCompletedChanged(completed: number) {
+    console.log(completed)
+  }
 
   return (
     <Popover.Root>
@@ -34,12 +38,13 @@ export function HabitDay({ completed = 0, amount = 0, date }: HabitDayProps) {
       <Popover.Portal>
         <Popover.Content className="p-6 min-w-[320px] /*border-2  border-zinc-800 rounded-2xl*/ bg-zinc-900 flex flex-col">
           <span className="font-semibold text-zinc-400">{ dayOfWeek }</span>
-          <span className="mt-1 font=extrabold leading-tight text-3xl">{ dayAndMonth }</span>
-          <HabitsList date={date} />
+          <span className="mt-1 font=extrabold leading-tight text-3xl">{dayAndMonth}</span>
+
           <ProgressBar progress={completedPercent} />
+          <HabitsList date={date} onCompletedChanged={handleCompletedChanged} />
           <Popover.Arrow height={8} width={16} className="fill-zinc-900" />
         </Popover.Content>
       </Popover.Portal>
     </Popover.Root>
-  )
-  }
+    )
+}

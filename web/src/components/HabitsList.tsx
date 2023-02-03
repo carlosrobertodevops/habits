@@ -6,6 +6,7 @@ import dayjs from "dayjs";
 
 interface HabitsListProps {
   date: Date
+  onCompletedChanged:(completed: number) => void
 }
 
 interface HabitsInfo {
@@ -18,7 +19,7 @@ interface HabitsInfo {
 }
 
 /** Hábitos em tempo real */
-export function HabitsList({date}: HabitsListProps) {
+export function HabitsList({date, onCompletedChanged}: HabitsListProps) {
   const [habitsInfo, setHabitsInfo] = useState<HabitsInfo>()
 
   /** chamada da api */
@@ -43,21 +44,23 @@ export function HabitsList({date}: HabitsListProps) {
 
     if (isHabitAlreadyCompleted) {
       completedHabits = habitsInfo!.completedHabits.filter(id => id != habitId)
+
     } else {
       completedHabits = [...habitsInfo!.completedHabits, habitId]
+
     }
 
     setHabitsInfo({
       possibleHabits: habitsInfo!.possibleHabits,
       completedHabits,
     })
-    // onCompletedChanged(completedHabits.length)
+
+    onCompletedChanged(completedHabits.length)
   }
 
   const isDateInPast = dayjs(date)
     .endOf('day')
-    .isBefore(new Date()
-  )
+    .isBefore(new Date())
 
   return (
     <div className="mt-6 flex flex-col gap-3">
@@ -66,7 +69,7 @@ export function HabitsList({date}: HabitsListProps) {
           <Checkbox.Root
             key={habit.id}
             onCheckedChange={() => handleToggleHabit(habit.id)}
-            checked={habitsInfo.completedHabits.includes(habit.id)}
+            /*  checked={habitsInfo.completedHabits.includes(habit.id)}  */
             disabled={isDateInPast}
             className='flex items-center gap-3 group'
           >
