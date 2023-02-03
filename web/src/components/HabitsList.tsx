@@ -64,12 +64,12 @@ export function HabitsList({date, onCompletedChanged}: HabitsListProps) {
 
   return (
     <div className="mt-6 flex flex-col gap-3">
-      {!habitsInfo?.possibleHabits.map(habit => {
+      {habitsInfo?.possibleHabits.map(habit => {
         return (
           <Checkbox.Root
             key={habit.id}
             onCheckedChange={() => handleToggleHabit(habit.id)}
-            checked={habitsInfo?.completedHabits.includes(habit.id)}
+            checked={habitsInfo.completedHabits.includes(habit.id)}
             disabled={isDateInPast}
             className='flex items-center gap-3 group'
           >
