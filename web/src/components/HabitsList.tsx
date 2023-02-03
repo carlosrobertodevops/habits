@@ -51,7 +51,6 @@ export function HabitsList({date}: HabitsListProps) {
       possibleHabits: habitsInfo!.possibleHabits,
       completedHabits,
     })
-
     // onCompletedChanged(completedHabits.length)
   }
 
