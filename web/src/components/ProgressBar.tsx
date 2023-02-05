@@ -12,7 +12,7 @@ export function ProgressBar({progress}: ProgressBarProps) {
         role="progressbar"
         aria-label="Progresso de hábitos completados nesse dia"
         aria-valuenow={progress}
-        className={clsx("w-3/4 h-3 rounded-xl bg-zinc-900 border-2 border-zinc-800 rounded-lg", {
+        className={clsx("w-3/4 h-3 rounded-xl bg-zinc-900 border-2 border-zinc-800 rounded-lg transition-all", {
         "bg-zinc-900 border-zinc-800": progress === 0, // default
         "bg-violet-900 border-violet-700": progress > 0 && progress < 20,
         "bg-violet-800 border-violet-600": progress >= 20 && progress < 40,

@@ -73,7 +73,7 @@ export function HabitsList({date, onCompletedChanged}: HabitsListProps) {
             disabled={isDateInPast}
             className='flex items-center gap-3 group'
           >
-            <div className='w-8 h-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500'>
+            <div className='w-8 h-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 transition-colors'>
               <Checkbox.Indicator>
                 <Check size={20} className="text-white" />
               </Checkbox.Indicator>
